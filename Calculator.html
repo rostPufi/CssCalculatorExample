@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calcolator</title>
+    <link rel="stylesheet" href="3.Calculator.css" />
+</head>
+<body>
+    <section>
+         <div class="Calculator">
+            <div>
+                <img src="cal_icon.png"  alt="calculator's icon" id="cal_icon" />
+            </div>
+            <div class="calcTitle">
+                Calculator
+            </div>
+             <div>
+                 <input type="button" id="minimize" />
+                 <input type="button" id="maximize" />
+                 <input type="button" id="close" />
+
+             </div>
+             <div class="calcElements">
+                 <div class="OptionBar">
+                     <span class="optBarItems"><span class="f_letter">V</span>iew</span>
+                     <span class="optBarItems"><span class="f_letter">E</span>dit</span>
+                     <span class="optBarItems"><span class="f_letter">H</span>elp</span>
+                 </div>
+                 <div class="num_monitor">
+                    8854455
+                 </div>
+                 <div class="binNum">
+                     <table class="binNum" cellpadding="0" cellspacing="0">
+                         <tr>
+                             <td>
+                                 0000
+                             </td>
+                             <td>
+                                 0000
+                             </td>
+                             <td>
+                                 0000
+                             </td>
+                             <td>
+                                 0000
+                             </td>
+                             <td>
+                                 0000
+                             </td>
+                             <td>
+                                 0000
+                             </td>
+                             <td>
+                                 0000
+                             </td>
+                             <td>
+                                 0000
+                             </td>
+                         </tr>
+                         <tr>
+                             <td colspan="4">
+                                 63
+                             </td>
+                             <td colspan="3">
+                                 47
+                             </td>
+                             <td colspan="1" align="right">
+                                 32
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 0000
+                             </td>
+                             <td>
+                                 0000
+                             </td>
+                             <td>
+                                 1000
+                             </td>
+                             <td>
+                                 0111
+                             </td>
+                             <td>
+                                 0001
+                             </td>
+                             <td>
+                                 1011
+                             </td>
+                             <td>
+                                 1011
+                             </td>
+                             <td>
+                                 0111
+                             </td>
+                         </tr>
+                         <tr>
+                             <td colspan="4">
+                                 31
+                             </td>
+                             <td colspan="3">
+                                 15
+                             </td>
+                             <td colspan="1" align="right">
+                                 0
+                             </td>
+                         </tr>
+                     </table>
+                 </div>
+                 <div id="radio">
+                    <div id="radioButtons">
+                        <input type="radio" value="Hex" id="hex" name="numeralSystem" />
+                        <label for="hex">Hex</label><br />
+                        <input type="radio" value="Dec" id="dec" name="numeralSystem" />
+                        <label for="dec">Dec</label><br />
+                        <input type="radio" value="Oct" id="oct" name="numeralSystem" />
+                        <label for="oct">Oct</label><br />
+                        <input type="radio" value="Bin" id="bin" name="numeralSystem" />
+                        <label for="bin">Bin</label>
+
+                    </div>
+                    <div id="radioButtons">
+                        <input type="radio" value="Qword" id="Qword" name="byte" />
+                        <label for="Qword">Qword</label><br />
+                        <input type="radio" value="Dword" id="Dword" name="byte" />
+                        <label for="Dword">Dword</label><br />
+                        <input type="radio" value="Word" id="Word" name="byte" />
+                        <label for="Word">Word</label><br />
+                        <input type="radio" value="Byte" id="Byte" name="byte" />
+                        <label for="Byte">Byte</label>
+                    </div>
+                 </div>
+
+                 <div class="buttons">
+                     <table class="buttons" collspan="0" cellspacing="0" cellpadding="0">
+                         <tr>
+                            <!--<td id="radioButtons" rowspan="3">
+                                 <input type="radio" value="Hex" id="hex" name="numeralSystem" />
+                                 <label for="hex">Hex</label><br />
+                                 <input type="radio" value="Dec" id="dec" name="numeralSystem" />
+                                 <label for="dec">Dec</label><br />
+                                 <input type="radio" value="Oct" id="oct" name="numeralSystem" />
+                                 <label for="oct">Oct</label><br />
+                                 <input type="radio" value="Bin" id="bin" name="numeralSystem" />
+                                 <label for="bin">Bin</label>
+                             </td>-->
+                             <td>
+                                 <input type="button" value="&nbsp" id="other"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="Mod" id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="A" id="other2"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="MC" id="other"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="MR" id="other"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="MS" id="other"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="M+" id="other"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="M-" id="other"/>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <input type="button" value="("  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value=")"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="B"  id="other2"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="&larr;"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="CE"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="C"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="&#177;"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="&radic;"  id="other2"/>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <input type="button" value="RoL"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="RoR"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="C"  id="other2"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="7"  id="number"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="8"  id="number"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="9"  id="number"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="/"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="%"  id="other2"/>
+                             </td>
+                         </tr>
+                         <tr>
+                            <!-- <td id="radioButtons" rowspan="3">
+                                 <input type="radio" value="Qword" id="Qword" name="byte" />
+                                 <label for="Qword">Qword</label><br />
+                                 <input type="radio" value="Dword" id="Dword" name="byte" />
+                                 <label for="Dword">Dword</label><br />
+                                 <input type="radio" value="Word" id="Word" name="byte" />
+                                 <label for="Word">Word</label><br />
+                                 <input type="radio" value="Byte" id="Byte" name="byte" />
+                                 <label for="Byte">Byte</label>
+                             </td>-->
+                             <td>
+                                 <input type="button" value="Or" id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="Xor" id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="D" id="other2"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="4" id="number"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="5" id="number"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="6" id="number"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="*" id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="1/x" id="other2"/>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <input type="button" value="Lsh"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="Rsh"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="E"  id="other2"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="1"  id="number"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="2"  id="number"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="3"  id="number"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="-"  id="function"/>
+                             </td>
+                             <td rowspan="2">
+                                 <input type="button" value="="  class="equal" id="function"/>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <input type="button" value="Not"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="Amd"  id="function"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="F"  id="other2"/>
+                             </td>
+                             <td colspan="2">
+                                 <input type="button" value="0"  id="function" class="zero"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="."  id="other2"/>
+                             </td>
+                             <td>
+                                 <input type="button" value="+"  id="function"/>
+                             </td>
+                         </tr>
+                     </table>
+             </div>
+        </div>
+    </section>
+</body>
+</html>
